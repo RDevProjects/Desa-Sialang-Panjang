@@ -4,20 +4,20 @@
     <section id="hero" class="hero section dark-background d-flex align-items-center">
 
         <div class="container">
-            <div class="row gy-4 text-center">
-                <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <div class="row gy-4">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
                     <h1 class="text-shadow">SELAMAT DATANG</h1>
                     <p class="text-shadow">di Desa Sialang Panjang</p>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex">
                         <a href="#about" class="btn-get-started">Get Started</a>
                         <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
                             class="glightbox btn-watch-video d-flex align-items-center"><i
                                 class="bi bi-play-circle"></i><span>Watch Video</span></a>
                     </div>
                 </div>
-                {{-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="{{ asset('assets/users/img/hero-img.png') }}" class="img-fluid animated" alt="">
-                </div> --}}
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                    <img src="{{ asset('assets/users/img/hero-img.png') }}" class="img-fluid animated w-75" alt="">
+                </div>
             </div>
         </div>
 
@@ -846,7 +846,7 @@
                         </div><!-- End Info Item -->
 
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.76588849339!2d102.99515340347612!3d-0.36946735448220386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e28442b50b30bfb%3A0xfb6ac5972821aafa!2sSialang%20Panjang%2C%20Tembilahan%20Hulu%2C%20Indragiri%20Hilir%20Regency%2C%20Riau!5e0!3m2!1sen!2sid!4v1722342849613!5m2!1sen!2sid"
                             frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
