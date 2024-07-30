@@ -39,7 +39,7 @@
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1 class="sitename">Arsha</h1>
+                <h1 class="sitename">Desa Sialang Panjang</h1>
             </a>
 
             <nav id="navmenu" class="navmenu">
@@ -82,14 +82,14 @@
     <main class="main">
 
         <!-- Hero Section -->
-        <section id="hero" class="hero section dark-background">
+        <section id="hero" class="hero section dark-background d-flex align-items-center">
 
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
                         data-aos="zoom-out">
-                        <h1>Better Solutions For Your Business</h1>
-                        <p>We are team of talented designers making websites with Bootstrap</p>
+                        <h1>SELAMAT DATANG</h1>
+                        <p>di Desa Sialang Panjang</p>
                         <div class="d-flex">
                             <a href="#about" class="btn-get-started">Get Started</a>
                             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
@@ -107,7 +107,7 @@
         </section><!-- /Hero Section -->
 
         <!-- Clients Section -->
-        <section id="clients" class="clients section light-background">
+        <section id="clients" class="clients section dark-background">
 
             <div class="container" data-aos="zoom-in">
 
@@ -178,38 +178,41 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>About Us</h2>
+                <h2>SIALANG PANJANG</h2>
             </div><!-- End Section Title -->
 
             <div class="container">
 
-                <div class="row gy-4">
+                <div class="row gy-3">
 
-                    <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
+                            Desa Sialang Panjang merupakan salah satu desa yang terletak di Kecamatan (nama kecamatan),
+                            Kabupaten Indragiri Hilir, Provinsi Riau. Desa ini dikenal sebagai salah satu sentra
+                            pertanian padi dengan mayoritas penduduknya yang berprofesi sebagai petani. Secara
+                            geografis, Desa Sialang Panjang memiliki lahan pertanian yang luas dan subur, dengan total
+                            luas sekitar 925 hektar. Dari jumlah tersebut, 750 hektar telah terdaftar di Badan
+                            Pertanahan Nasional (BPN), sementara 175 hektar lainnya belum terdaftar.
                         </p>
-                        <ul>
-                            <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</span></li>
-                            <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in
-                                    voluptate velit.</span></li>
-                            <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea
-                                    commodo</span></li>
-                        </ul>
+                        <p>
+                            Potensi pertanian Desa Sialang Panjang sangat besar, dengan setiap hektar lahan mampu
+                            menghasilkan sekitar 2 hingga 3 ton gabah. Namun, potensi besar ini belum sepenuhnya
+                            dioptimalkan dalam hal pemasaran. Saat ini, penjualan beras masih banyak mengandalkan metode
+                            konvensional yang terbatas pada pasar lokal. Hal ini menyebabkan terbatasnya akses pasar dan
+                            kurang optimalnya pendapatan yang diterima oleh para petani.
+                        </p>
+                        <p>
+                            Program KKN-Tematik 2024 Universitas Islam Indragiri hadir dengan tema "Program Kolaboratif
+                            Entrepreneurship Syariah dalam Upaya Memaksimalkan Potensi Desa" dengan tujuan utama
+                            meningkatkan kesejahteraan masyarakat melalui optimalisasi potensi pertanian. Salah satu
+                            fokus utama program ini adalah membangun website pemasaran digital untuk produk beras dari
+                            Desa Sialang Panjang, yang dikenal dengan "Beras Indragiri".
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="read-more w-25"><span>Lihat Lebih Banyak</span><i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum. </p>
-                        <a href="#" class="read-more"><span>Read More</span><i
-                                class="bi bi-arrow-right"></i></a>
-                    </div>
-
                 </div>
 
             </div>
