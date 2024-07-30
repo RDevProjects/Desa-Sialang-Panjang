@@ -3,6 +3,8 @@
 
 @include('include.head')
 
+@stack('css')
+
 <body class="index-page">
 
     <header id="header" class="header d-flex align-items-center fixed-top">
