@@ -9,3 +9,10 @@ Route::get('/', function () {
 Route::get('/tentang-desa', function () {
     return view('users.tentang');
 })->name('tentangDesa');
+
+
+Route::prefix('dashboard')->group(function () {
+    Route::get('/', function () {
+        return view('admin.index');
+    })->name('dashboard.home');
+});
