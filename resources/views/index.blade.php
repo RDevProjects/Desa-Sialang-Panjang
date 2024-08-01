@@ -1,4 +1,70 @@
 @extends('include.layout')
+@push('css')
+    <style>
+        .card-img-wrapper {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            zoom: 1;
+        }
+
+        .card-img-wrapper-50 {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .card-img-wrapper-50 img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #608637;
+            border-color: #608637;
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #3f5825;
+            border-color: #3f5825;
+        }
+
+        .btn-primary:focus,
+        .btn-primary.focus {
+            color: #fff;
+            background-color: #608637;
+            border-color: #608637;
+            box-shadow: 0 0 0 0.2rem rgba(105, 136, 228, 0.5);
+        }
+
+        .btn-outline-primary {
+            color: #608637;
+            border-color: #608637;
+        }
+
+        .btn-outline-primary:hover {
+            color: #fff;
+            background-color: #608637;
+            border-color: #608637;
+        }
+
+        .btn-outline-primary:focus,
+        .btn-outline-primary.focus {
+            box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.5);
+        }
+    </style>
+@endpush
 @section('content')
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background d-flex align-items-center">
@@ -70,136 +136,80 @@
 
     </section><!-- /About Section -->
 
-    <!-- Why Us Section -->
-    <section id="why-us" class="section why-us light-background" data-builder="section">
+    <!-- Blog Section -->
+    <section id="blog" class="services section light-background">
 
-        <div class="container-fluid">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Blog</h2>
+            {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="row gy-4">
 
-                <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-
-                    <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-                        <h3><span>Eum ipsam laborum deleniti </span><strong>velit pariatur architecto aut
-                                nihil</strong></h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                        </p>
+                @foreach ($blog as $item)
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="{{ asset('storage/' . $item->image) }}" class="card-img-top" alt="Blog Image">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a
+                                        href="{{ route('dashboard.blog', $item->slug) }}">{{ $item->title }}</a></h5>
+                                <p class="card-text">
+                                    {{ \Illuminate\Support\Str::limit(strip_tags($item->description), 150) }}<a
+                                        href="{{ route('dashboard.blog', $item->slug) }}"> Baca Selengkapnya</a></p>
+                            </div>
+                        </div>
                     </div>
+                @endforeach
 
-                    <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-
-                        <div class="faq-item faq-active">
-
-                            <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
-                            <div class="faq-content">
-                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
-                                    laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
-                                    rhoncus dolor purus non.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
-
-                        <div class="faq-item">
-                            <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
-                            </h3>
-                            <div class="faq-content">
-                                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                    interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                    scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                    Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
-
-                        <div class="faq-item">
-                            <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                            <div class="faq-content">
-                                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                                    Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
-                                    suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                    convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                </p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-                    <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in"
-                        data-aos-delay="100">
-                </div>
             </div>
-
+            <div class="text-center">
+                <a href="{{ route('dashboard.blog') }}" class="btn btn-outline-primary">Baca Blog Lainnya</a>
+            </div>
         </div>
 
-    </section><!-- /Why Us Section -->
+    </section><!-- /Blog Section -->
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <!-- Produk Section -->
+    <section id="produk" class="skills section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Produk</h2>
+            <p>Produk unggulan dari Desa Sialang Panjang</p>
+        </div><!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
             <div class="row">
-
-                <div class="col-lg-6 d-flex align-items-center">
-                    <img src="assets/img/skills.png" class="img-fluid" alt="">
-                </div>
-
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-
-                    <h3>Voluptatem dignissimos provident quasi corporis voluptas</h3>
-                    <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-
-                    <div class="skills-content skills-animation">
-
-                        <div class="progress">
-                            <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                @foreach ($produk as $item)
+                    <div class="col-lg-3 col-md-4 mb-4">
+                        <div class="card" style="background-color: #fff9c4; border-radius: 10%">
+                            <div class="card-body">
+                                <div class="card-img-wrapper-50">
+                                    <img src="{{ asset('storage/' . $item->image) }}" class="card-img-top"
+                                        alt="Produk Image">
+                                </div>
+                                <h5 class="card-title mt-2 text-truncate"><a
+                                        href="{{ route('dashboard.blog', $item->slug) }}">{{ $item->name }}</a></h5>
+                                <p class="card-text">Rp. {{ number_format($item->price, 0, ',', '.') }}
+                                </p>
                             </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
-                        <div class="progress">
-                            <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-                            </div>
-                        </div><!-- End Skills Item -->
-
+                        </div>
                     </div>
-
-                </div>
+                @endforeach
             </div>
-
+            <div class="text-center">
+                <a href="{{ route('dashboard.blog') }}" class="btn btn-primary">Lihat Produk Sialang Panjang
+                    Lainnya</a>
+            </div>
         </div>
 
-    </section><!-- /Skills Section -->
+    </section><!-- /Produk Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section light-background">

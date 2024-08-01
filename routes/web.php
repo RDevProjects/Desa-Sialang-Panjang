@@ -3,14 +3,17 @@
 use App\Models\Blog;
 use App\Models\Produk;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeDashboard;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\HomeDashboardAdmin;
 use App\Http\Controllers\KomunitasController;
 
-Route::get('/', function () {
-    return view('index');
-})->name('home');
+// Route::get('/', function () {
+//     return view('index');
+// })->name('home');
+
+Route::get('/', [HomeDashboard::class, 'index'])->name('home');
 
 Route::get('/tentang-desa', function () {
     return view('users.tentang');
