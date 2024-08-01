@@ -38,14 +38,14 @@
                         @foreach ($blogs as $blog)
                             <tr>
                                 <td>{{ $no++ }}</td>
-                                <td><img src="{{ asset('images/blog/' . $blog->image) }}" alt="Post Image"
+                                <td><img src="{{ asset('storage/' . $blog->image) }}" alt="Post Image"
                                         style="width: 100px; padding: 0%"></td>
                                 <td>{{ $blog->title }}</td>
-                                <td>{{ Str::limit(strip_tags($blog->description), 50) }}</td>
+                                <td>{{ Str::limit(strip_tags($blog->description), 150) }}</td>
                                 <td class="d-flex gap-2">
-                                    <a href="{{ route('dashboard.blog', $blog->slug) }}" class="btn btn-primary"><i
+                                    <a href="{{ route('dashboard.blog.edit', $blog->slug) }}" class="btn btn-primary"><i
                                             class="far fa-edit"></i> Edit</a>
-                                    <form action="{{ route('dashboard.blog', $blog->slug) }}" method="POST">
+                                    <form action="{{ route('dashboard.blog.delete', $blog->slug) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i>

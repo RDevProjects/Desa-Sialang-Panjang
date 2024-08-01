@@ -3,6 +3,9 @@
 
 @include('include.head')
 
+@stack('css')
+@stack('script-head')
+
 <body class="starter-page-page">
 
     <header id="header" class="header d-flex align-items-center sticky-top">
