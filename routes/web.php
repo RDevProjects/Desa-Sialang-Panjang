@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 
 Route::get('/', function () {
     return view('index');
@@ -16,7 +18,7 @@ Route::prefix('dashboard')->group(function () {
         return view('admin.index');
     })->name('dashboard.home');
 
-    Route::get('/blog', function () {
-        return view('admin.blog.index');
-    })->name('dashboard.blog');
+    Route::get('/blog', [BlogController::class, 'index'])->name('dashboard.blog');
+    Route::get('/blog/tambah', [BlogController::class, 'create'])->name('dashboard.blog.tambah');
+    Route::post('/blog/tambah', [BlogController::class, 'store'])->name('dashboard.blog.store');
 });
