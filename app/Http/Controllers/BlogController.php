@@ -49,7 +49,6 @@ class BlogController extends Controller
         return redirect()->route('dashboard.blog')->with('success', 'Blog berhasil ditambahkan');
     }
 
-
     public function edit($slug)
     {
         $blog = Blog::where('slug', $slug)->first();

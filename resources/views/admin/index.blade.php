@@ -20,7 +20,7 @@
                                 Jumlah Blog
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                $40,000
+                                {{ $blogs }}
                             </div>
                         </div>
                         <div class="col-auto">
@@ -41,7 +41,7 @@
                                 Jumlah Data Produk
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                $215,000
+                                {{ $produk }}
                             </div>
                         </div>
                         <div class="col-auto">
@@ -62,7 +62,7 @@
                                 Komunitas
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                18
+                                {{ $komunitas }}
                             </div>
                         </div>
                         <div class="col-auto">

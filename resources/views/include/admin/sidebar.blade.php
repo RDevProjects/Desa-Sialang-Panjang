@@ -56,7 +56,7 @@
 
             <!-- Nav Item - Produk -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="{{ route('dashboard.produk') }}">
                     <i class="fas fa-pallet"></i>
                     <span>Produk</span></a>
             </li>
