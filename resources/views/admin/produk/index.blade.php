@@ -46,9 +46,9 @@
                                 <td>{{ 'Rp. ' . number_format(floatval($produk->price), 0, ',', '.') }}</td>
                                 <td>{{ Str::limit(strip_tags($produk->description), 150) }}</td>
                                 <td class="d-flex gap-2">
-                                    <a href="{{ route('dashboard.blog.edit', $produk->slug) }}" class="btn btn-primary"><i
+                                    <a href="{{ route('dashboard.produk.edit', $produk->slug) }}" class="btn btn-primary"><i
                                             class="far fa-edit"></i> Edit</a>
-                                    <form action="{{ route('dashboard.blog.delete', $produk->slug) }}" method="POST">
+                                    <form action="{{ route('dashboard.produk.delete', $produk->slug) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i>

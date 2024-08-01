@@ -45,4 +45,54 @@ class ProdukController extends Controller
 
         return redirect()->route('dashboard.produk')->with('success', 'Produk berhasil ditambahkan');
     }
+
+    public function edit($slug)
+    {
+        $produk = Produk::where('slug', $slug)->first();
+        return view('admin.produk.edit', compact('produk'));
+    }
+
+    public function update(Request $request, $slug)
+    {
+        $request->validate([
+            'nama' => 'required',
+            'harga' => 'required|numeric',
+            'description' => 'required',
+        ]);
+
+        $produk = Produk::where('slug', $slug)->first();
+
+        if ($request->hasFile('image')) {
+            $request->validate([
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+
+            Storage::delete('public/' . $produk->image);
+
+            $imageName = date('YmdHis') . '.' . $request->image->extension();
+            $imageNamePath = 'images/produk/' . $imageName;
+            Storage::putFileAs('public/images/produk', $request->image, $imageName);
+        } else {
+            $imageNamePath = $produk->image;
+        }
+
+        $produk->update([
+            'name' => $request->nama,
+            'slug' => Str::slug($request->nama, '-'),
+            'price' => $request->harga,
+            'image' => $imageNamePath,
+            'description' => $request->description,
+        ]);
+
+        return redirect()->route('dashboard.produk')->with('success', 'Produk berhasil diubah');
+    }
+
+    public function destroy($slug)
+    {
+        $produk = Produk::where('slug', $slug)->first();
+        Storage::delete('public/' . $produk->image);
+        $produk->delete();
+
+        return redirect()->route('dashboard.produk')->with('success', 'Produk berhasil dihapus');
+    }
 }

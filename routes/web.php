@@ -30,4 +30,7 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/produk', [ProdukController::class, 'index'])->name('dashboard.produk');
     Route::get('/produk/tambah', [ProdukController::class, 'create'])->name('dashboard.produk.tambah');
     Route::post('/produk/tambah', [ProdukController::class, 'store'])->name('dashboard.produk.store');
+    Route::get('/produk/edit/{slug}', [ProdukController::class, 'edit'])->name('dashboard.produk.edit');
+    Route::put('/produk/edit/{slug}', [ProdukController::class, 'update'])->name('dashboard.produk.update');
+    Route::delete('/produk/delete/{slug}', [ProdukController::class, 'destroy'])->name('dashboard.produk.delete');
 });
