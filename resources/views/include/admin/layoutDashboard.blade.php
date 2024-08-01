@@ -3,6 +3,8 @@
 
 @include('include.admin.head')
 
+@stack('css')
+
 <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -68,6 +70,7 @@
     </div>
 
     @include('include.admin.script')
+    @stack('js')
 </body>
 
 </html>
