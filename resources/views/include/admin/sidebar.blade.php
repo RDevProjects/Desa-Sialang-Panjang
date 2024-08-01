@@ -63,7 +63,7 @@
 
             <!-- Nav Item - Komunitas -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="{{ route('dashboard.komunitas') }}">
                     <i class="fas fa-users"></i>
                     <span>Komunitas</span></a>
             </li>

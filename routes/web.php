@@ -1,11 +1,12 @@
 <?php
 
 use App\Models\Blog;
+use App\Models\Produk;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\HomeDashboardAdmin;
 use App\Http\Controllers\ProdukController;
-use App\Models\Produk;
+use App\Http\Controllers\HomeDashboardAdmin;
+use App\Http\Controllers\KomunitasController;
 
 Route::get('/', function () {
     return view('index');
@@ -33,4 +34,11 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/produk/edit/{slug}', [ProdukController::class, 'edit'])->name('dashboard.produk.edit');
     Route::put('/produk/edit/{slug}', [ProdukController::class, 'update'])->name('dashboard.produk.update');
     Route::delete('/produk/delete/{slug}', [ProdukController::class, 'destroy'])->name('dashboard.produk.delete');
+
+    Route::get('/komunitas', [KomunitasController::class, 'index'])->name('dashboard.komunitas');
+    Route::get('/komunitas/tambah', [KomunitasController::class, 'create'])->name('dashboard.komunitas.tambah');
+    Route::post('/komunitas/tambah', [KomunitasController::class, 'store'])->name('dashboard.komunitas.store');
+    Route::get('/komunitas/edit/{slug}', [KomunitasController::class, 'edit'])->name('dashboard.komunitas.edit');
+    Route::put('/komunitas/edit/{slug}', [KomunitasController::class, 'update'])->name('dashboard.komunitas.update');
+    Route::delete('/komunitas/delete/{slug}', [KomunitasController::class, 'destroy'])->name('dashboard.komunitas.delete');
 });

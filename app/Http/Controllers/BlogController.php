@@ -26,7 +26,7 @@ class BlogController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
         // Simpan gambar
@@ -61,7 +61,7 @@ class BlogController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
         // Temukan blog berdasarkan slug

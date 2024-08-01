@@ -2,23 +2,22 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            Tambah Blog
+            Tambah Komunitas
         </div>
         <div class="card-body">
-            {{-- buatkan form input 'title', 'slug', 'description', 'image' --}}
-            <form action="{{ route('dashboard.blog.tambah') }}" method="POST" enctype="multipart/form-data"
+            <form action="{{ route('dashboard.komunitas.store') }}" method="POST" enctype="multipart/form-data"
                 onsubmit="submitForm(event)">
                 @csrf
                 <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" id="title" class="form-control" required>
+                    <label for="name">Nama Komunitas</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="image">Image</label>
+                    <label for="image">Foto Komunitas</label>
                     <input type="file" name="image" id="image" class="form-control w-50 h-25" required>
                 </div>
                 <div class="form-group">
-                    <label for="description">Description</label>
+                    <label for="description">Deskripsi Komunitas</label>
                     <div id="quillEditorDefault" style="height: 50vh;"></div>
                     <!-- Hidden input to store the description -->
                     <input type="hidden" name="description" id="description">
