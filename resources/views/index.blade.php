@@ -3,16 +3,15 @@
     <style>
         .card-img-wrapper {
             width: 100%;
-            height: 300px;
+            height: 250px;
             overflow: hidden;
         }
 
         .card-img-wrapper img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             object-position: center;
-            zoom: 1;
         }
 
         .card-img-wrapper-50 {
@@ -151,8 +150,8 @@
 
                 @foreach ($blog as $item)
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card">
-                            <div class="card-img-wrapper">
+                        <div class="card" style="border-radius: 10%">
+                            <div class="card-img-wrapper" style="margin-top: 6%">
                                 <img src="{{ asset('storage/' . $item->image) }}" class="card-img-top" alt="Blog Image">
                             </div>
                             <div class="card-body">
@@ -211,58 +210,37 @@
 
     </section><!-- /Produk Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
+    <!-- Komunitas Section -->
+    <section id="komunitas" class="services section light-background">
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Services</h2>
+            <h2>Komunitas</h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div><!-- End Section Title -->
 
         <div class="container">
 
             <div class="row gy-4">
-
-                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-item position-relative">
-                        <div class="icon"><i class="bi bi-activity icon"></i></div>
-                        <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                    </div>
-                </div><!-- End Service Item -->
-
-                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-item position-relative">
-                        <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-                        <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                    </div>
-                </div><!-- End Service Item -->
-
-                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-item position-relative">
-                        <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-                        <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                    </div>
-                </div><!-- End Service Item -->
-
-                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-item position-relative">
-                        <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-                        <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                    </div>
-                </div><!-- End Service Item -->
-
+                @foreach ($komunitas as $item)
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            <div class="icon"> <img src="{{ asset('storage/' . $item->image) }}" class="card-img-top"
+                                    alt="Produk Image"></div>
+                            <h4><a href="{{ route('dashboard.blog', $item->slug) }}"
+                                    class="stretched-link">{{ $item->name }}</a></h4>
+                            <p>{{ \Illuminate\Support\Str::limit(strip_tags($item->description), 150) }}<a
+                                    href="{{ route('dashboard.blog', $item->slug) }}"> Baca Selengkapnya</a></p>
+                        </div>
+                    </div><!-- End Service Item -->
+                @endforeach
             </div>
 
         </div>
 
-    </section><!-- /Services Section -->
+    </section><!-- /Komunitas Section -->
 
-    <!-- Call To Action Section -->
+    {{-- <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
         <img src="assets/img/cta-bg.jpg" alt="">
@@ -283,9 +261,9 @@
 
         </div>
 
-    </section><!-- /Call To Action Section -->
+    </section><!-- /Call To Action Section --> --}}
 
-    <!-- Portfolio Section -->
+    {{-- <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
         <!-- Section Title -->
@@ -430,9 +408,9 @@
 
         </div>
 
-    </section><!-- /Portfolio Section -->
+    </section><!-- /Portfolio Section --> --}}
 
-    <!-- Team Section -->
+    {{-- <!-- Team Section -->
     <section id="team" class="team section">
 
         <!-- Section Title -->
@@ -521,9 +499,9 @@
 
         </div>
 
-    </section><!-- /Team Section -->
+    </section><!-- /Team Section --> --}}
 
-    <!-- Pricing Section -->
+    {{-- <!-- Pricing Section -->
     <section id="pricing" class="pricing section light-background">
 
         <!-- Section Title -->
@@ -587,9 +565,9 @@
 
         </div>
 
-    </section><!-- /Pricing Section -->
+    </section><!-- /Pricing Section --> --}}
 
-    <!-- Testimonials Section -->
+    {{-- <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
 
         <!-- Section Title -->
@@ -724,9 +702,9 @@
 
         </div>
 
-    </section><!-- /Testimonials Section -->
+    </section><!-- /Testimonials Section --> --}}
 
-    <!-- Faq 2 Section -->
+    {{-- <!-- Faq 2 Section -->
     <section id="faq-2" class="faq-2 section light-background">
 
         <!-- Section Title -->
@@ -813,7 +791,7 @@
 
         </div>
 
-    </section><!-- /Faq 2 Section -->
+    </section><!-- /Faq 2 Section --> --}}
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -834,8 +812,8 @@
                         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                             <i class="bi bi-geo-alt flex-shrink-0"></i>
                             <div>
-                                <h3>Address</h3>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <h3>Alamat</h3>
+                                <p>Sialang Panjang, Tembilahan Hulu, Indragiri Hilir Regency, Riau</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -855,15 +833,15 @@
                             </div>
                         </div><!-- End Info Item -->
 
-                        <iframe
+                        {{-- <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.76588849339!2d102.99515340347612!3d-0.36946735448220386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e28442b50b30bfb%3A0xfb6ac5972821aafa!2sSialang%20Panjang%2C%20Tembilahan%20Hulu%2C%20Indragiri%20Hilir%20Regency%2C%20Riau!5e0!3m2!1sen!2sid!4v1722342849613!5m2!1sen!2sid"
                             frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
                     </div>
                 </div>
 
-                <div class="col-lg-7">
-                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                    {{-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
                         data-aos-delay="200">
                         <div class="row gy-4">
 
@@ -899,7 +877,13 @@
                             </div>
 
                         </div>
-                    </form>
+                    </form> --}}
+                    <div class="info-wrap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.76588849339!2d102.99515340347612!3d-0.36946735448220386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e28442b50b30bfb%3A0xfb6ac5972821aafa!2sSialang%20Panjang%2C%20Tembilahan%20Hulu%2C%20Indragiri%20Hilir%20Regency%2C%20Riau!5e0!3m2!1sen!2sid!4v1722342849613!5m2!1sen!2sid"
+                            frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div><!-- End Contact Form -->
 
             </div>

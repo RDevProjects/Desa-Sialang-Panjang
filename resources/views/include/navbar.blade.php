@@ -7,11 +7,11 @@
 <nav id="navmenu" class="navmenu">
     <ul>
         <li><a href="{{ route('home') }}#hero" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#produk">Produk</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="{{ route('home') }}#about">About</a></li>
+        <li><a href="{{ route('home') }}#blog">Blog</a></li>
+        <li><a href="{{ route('home') }}#produk">Produk</a></li>
+        <li><a href="{{ route('home') }}#komunitas">Komunitas</a></li>
+        {{-- <li><a href="#pricing">Pricing</a></li>
         <li class="dropdown"><a href="#"><span>Dropdown</span> <i
                     class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -30,8 +30,8 @@
                 <li><a href="#">Dropdown 3</a></li>
                 <li><a href="#">Dropdown 4</a></li>
             </ul>
-        </li>
-        <li><a href="#contact">Contact</a></li>
+        </li> --}}
+        <li><a href="{{ route('home') }}#contact">Contact</a></li>
     </ul>
     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav>
