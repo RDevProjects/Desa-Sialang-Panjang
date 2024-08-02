@@ -16,45 +16,42 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="container footer-top">
         <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
                 <a href="index.html" class="d-flex align-items-center">
-                    <span class="sitename">Arsha</span>
+                    <span class="sitename">{{ env('APP_NAME') }}</span>
                 </a>
                 <div class="footer-contact pt-3">
-                    <p>A108 Adam Street</p>
-                    <p>New York, NY 535022</p>
-                    <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    <p>Sialang Panjang</p>
+                    <p>Tembilahan Hulu, Indragiri Hilir Regency, Riau</p>
+                    {{-- <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p> --}}
+                    <p><strong>Email:</strong> <span>sialangpanjang24@gmail.com</span></p>
                 </div>
             </div>
 
             <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Useful Links</h4>
+                <h4>Beberapa Link Yang Berguna</h4>
                 <ul>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#hero">Beranda</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#about">Tentang Kami</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#blog">Blog</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#komunitas">Komunitas</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Our Services</h4>
+                <h4>Produk {{ env('APP_NAME') }}</h4>
                 <ul>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#produk">Produk</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-4 col-md-12">
-                <h4>Follow Us</h4>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                <h4>Ikuti Sosial Media {{ env('APP_NAME') }}</h4>
+                <p>Beberapa Sosial Media {{ env('APP_NAME') }}</p>
                 <div class="social-links d-flex">
                     <a href=""><i class="bi bi-twitter-x"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -64,10 +61,10 @@
             </div>
 
         </div>
-    </div> --}}
+    </div>
 
     <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">{{ env('APP_NAME') }}</strong> <span>All Rights
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">{{ env('APP_COPYRIGHT') }}</strong> <span>All Rights
                 Reserved</span>
         </p>
         {{-- <div class="credits">

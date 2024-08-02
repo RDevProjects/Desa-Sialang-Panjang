@@ -71,10 +71,10 @@
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-                    <h1 class="text-shadow">SELAMAT DATANG</h1>
-                    <p class="text-shadow">di Desa Sialang Panjang</p>
+                    <h1 class="text-shadow">Selamat Datang di Pusat Pemasaran Beras Indragiri</h1>
+                    <p class="text-shadow">Menyediakan Beras Berkualitas Tinggi dari Desa Sialang Panjang</p>
                     <div class="d-flex">
-                        <a href="#about" class="btn-get-started">Get Started</a>
+                        <a href="#about" class="btn-get-started">Belanja Sekarang</a>
                         <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
                             class="glightbox btn-watch-video d-flex align-items-center"><i
                                 class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -90,7 +90,7 @@
 
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="tentang" class="about section">
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -794,11 +794,11 @@
     </section><!-- /Faq 2 Section --> --}}
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="kontak" class="contact section">
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Contact</h2>
+            <h2>Kontak Kami</h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div><!-- End Section Title -->
 
@@ -808,28 +808,28 @@
 
                 <div class="col-lg-5">
 
-                    <div class="info-wrap">
+                    <div class="info-wrap" style="height: 30rem">
                         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                             <i class="bi bi-geo-alt flex-shrink-0"></i>
                             <div>
-                                <h3>Alamat</h3>
+                                <h3>{{ env('APP_NAME') }}</h3>
                                 <p>Sialang Panjang, Tembilahan Hulu, Indragiri Hilir Regency, Riau</p>
                             </div>
                         </div><!-- End Info Item -->
 
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                        {{-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                             <i class="bi bi-telephone flex-shrink-0"></i>
                             <div>
-                                <h3>Call Us</h3>
+                                <h3>Nomor Telp {{ env('APP_NAME') }}</h3>
                                 <p>+1 5589 55488 55</p>
                             </div>
-                        </div><!-- End Info Item -->
+                        </div><!-- End Info Item --> --}}
 
                         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                             <i class="bi bi-envelope flex-shrink-0"></i>
                             <div>
-                                <h3>Email Us</h3>
-                                <p>info@example.com</p>
+                                <h3>Email {{ env('APP_NAME') }}</h3>
+                                <p>sialangpanjang24@gmail.com</p>
                             </div>
                         </div><!-- End Info Item -->
 

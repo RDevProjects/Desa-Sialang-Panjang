@@ -6,8 +6,8 @@
 
 <nav id="navmenu" class="navmenu">
     <ul>
-        <li><a href="{{ route('home') }}#hero" class="active">Home</a></li>
-        <li><a href="{{ route('home') }}#about">About</a></li>
+        <li><a href="{{ route('home') }}#hero" class="active">Beranda</a></li>
+        <li><a href="{{ route('home') }}#tentang">Tentang Kami</a></li>
         <li><a href="{{ route('home') }}#blog">Blog</a></li>
         <li><a href="{{ route('home') }}#produk">Produk</a></li>
         <li><a href="{{ route('home') }}#komunitas">Komunitas</a></li>
@@ -31,7 +31,7 @@
                 <li><a href="#">Dropdown 4</a></li>
             </ul>
         </li> --}}
-        <li><a href="{{ route('home') }}#contact">Contact</a></li>
+        <li><a href="{{ route('home') }}#kontak">Kontak Kami</a></li>
     </ul>
     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav>
