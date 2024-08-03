@@ -19,6 +19,11 @@ Route::get('/tentang-desa', function () {
     return view('users.tentang');
 })->name('tentangDesa');
 
+Route::get('/blog', [HomeDashboard::class, 'blog'])->name('blog');
+Route::get('/blog/{slug}', [HomeDashboard::class, 'blogShow'])->name('blog.show');
+
+Route::get('/produk', [HomeDashboard::class, 'produk'])->name('produk');
+Route::get('/produk/{slug}', [HomeDashboard::class, 'produkShow'])->name('produk.show');
 
 Route::prefix('dashboard')->group(function () {
     Route::get('/', [HomeDashboardAdmin::class, 'index'])->name('dashboard.home');

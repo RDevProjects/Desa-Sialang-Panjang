@@ -2509,7 +2509,7 @@ textarea.form-control.is-invalid {
 .btn:focus,
 .btn.focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(96, 134, 55, 0.25);
 }
 
 .btn.disabled,
@@ -2543,7 +2543,7 @@ fieldset:disabled a.btn {
     color: #fff;
     background-color: #608637;
     border-color: #608637;
-    box-shadow: 0 0 0 0.2rem rgba(105, 136, 228, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(96, 134, 55, 0.5);
 }
 
 .btn-primary.disabled,
@@ -2564,7 +2564,7 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(105, 136, 228, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(96, 134, 55, 0.5);
 }
 
 .btn-secondary {
@@ -2867,7 +2867,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(96, 134, 55, 0.5);
 }
 
 .btn-outline-primary.disabled,
@@ -2887,7 +2887,7 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(96, 134, 55, 0.5);
 }
 
 .btn-outline-secondary {
