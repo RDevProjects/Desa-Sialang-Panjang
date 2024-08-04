@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Models\Blog;
 use App\Models\Produk;
 use Illuminate\Support\Facades\Route;
@@ -28,7 +29,11 @@ Route::get('/produk/{slug}', [HomeDashboard::class, 'produkShow'])->name('produk
 Route::get('/komunitas', [HomeDashboard::class, 'komunitas'])->name('komunitas');
 Route::get('/komunitas/{slug}', [HomeDashboard::class, 'komunitasShow'])->name('komunitas.show');
 
-Route::prefix('dashboard')->group(function () {
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/login', [AuthController::class, 'postLogin'])->name('login.post');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
+
+Route::prefix('dashboard')->middleware('auth')->group(function () {
     Route::get('/', [HomeDashboardAdmin::class, 'index'])->name('dashboard.home');
 
     Route::get('/blog', [BlogController::class, 'index'])->name('dashboard.blog');
