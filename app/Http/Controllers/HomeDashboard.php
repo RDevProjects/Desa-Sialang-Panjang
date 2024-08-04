@@ -40,4 +40,16 @@ class HomeDashboard extends Controller
         $produk = Produk::where('slug', $slug)->first();
         return view('users.showProduk', compact('produk'));
     }
+
+    public function komunitas()
+    {
+        $komunitas = Komunitas::latest()->get();
+        return view('users.komunitas', compact('komunitas'));
+    }
+
+    public function komunitasShow($slug)
+    {
+        $komunitas = Komunitas::where('slug', $slug)->first();
+        return view('users.showKomunitas', compact('komunitas'));
+    }
 }

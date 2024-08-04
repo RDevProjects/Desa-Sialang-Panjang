@@ -25,6 +25,9 @@ Route::get('/blog/{slug}', [HomeDashboard::class, 'blogShow'])->name('blog.show'
 Route::get('/produk', [HomeDashboard::class, 'produk'])->name('produk');
 Route::get('/produk/{slug}', [HomeDashboard::class, 'produkShow'])->name('produk.show');
 
+Route::get('/komunitas', [HomeDashboard::class, 'komunitas'])->name('komunitas');
+Route::get('/komunitas/{slug}', [HomeDashboard::class, 'komunitasShow'])->name('komunitas.show');
+
 Route::prefix('dashboard')->group(function () {
     Route::get('/', [HomeDashboardAdmin::class, 'index'])->name('dashboard.home');
 

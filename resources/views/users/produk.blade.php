@@ -40,13 +40,15 @@
                         <div class="card" style="background-color: #fff9c4; border-radius: 10%">
                             <div class="card-body">
                                 <div class="card-img-wrapper-50">
-                                    <img src="{{ asset('storage/' . $item->image) }}" class="card-img-top"
-                                        alt="Produk Image">
+                                    <a href="{{ route('produk.show', $item->slug) }}">
+                                        <img src="{{ asset('storage/' . $item->image) }}" class="card-img-top"
+                                            alt="Produk Image">
+                                    </a>
                                 </div>
-                                <h5 class="card-title mt-2 text-truncate"><a
-                                        href="{{ route('dashboard.blog', $item->slug) }}">{{ $item->name }}</a></h5>
-                                <p class="card-text">Rp. {{ number_format($item->price, 0, ',', '.') }}
-                                </p>
+                                <h5 class="card-title mt-2 text-truncate">
+                                    <a href="{{ route('produk.show', $item->slug) }}">{{ $item->name }}</a>
+                                </h5>
+                                <p class="card-text">Rp. {{ number_format($item->price, 0, ',', '.') }}</p>
                             </div>
                         </div>
                     </div>
