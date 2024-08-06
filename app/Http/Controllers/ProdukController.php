@@ -25,7 +25,7 @@ class ProdukController extends Controller
         $request->validate([
             'nama' => 'required',
             'harga' => 'required|numeric',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp',
             'description' => 'required',
         ]);
 
@@ -64,7 +64,7 @@ class ProdukController extends Controller
 
         if ($request->hasFile('image')) {
             $request->validate([
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp',
             ]);
 
             Storage::delete('public/' . $produk->image);

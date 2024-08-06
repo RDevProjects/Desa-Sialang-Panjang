@@ -26,7 +26,7 @@ class KomunitasController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp',
         ]);
 
         $imageName = date('YmdHis') . '.' . $request->image->extension();
@@ -56,7 +56,7 @@ class KomunitasController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg,webp',
         ]);
 
         $komunitas = Komunitas::where('slug', $slug)->first();
