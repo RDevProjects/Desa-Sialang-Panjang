@@ -17,41 +17,44 @@
     <!-- Starter Section Section -->
     <section id="starter-section" class="starter-section section">
         <div class="container" data-aos="fade-up">
-            <p>Desa Sialang Panjang merupakan salah satu desa yang terletak di Kecamatan (nama kecamatan), Kabupaten
-                Indragiri Hilir, Provinsi Riau. Desa ini dikenal sebagai salah satu sentra pertanian padi dengan mayoritas
-                penduduknya yang berprofesi sebagai petani. Secara geografis, Desa Sialang Panjang memiliki lahan pertanian
-                yang luas dan subur, dengan total luas sekitar 925 hektar. Dari jumlah tersebut, 750 hektar telah terdaftar
-                di Badan Pertanahan Nasional (BPN), sementara 175 hektar lainnya belum terdaftar.
+            <p>
+                Desa Sialang Panjang adalah desa yang mayoritas penduduknya adalah petani padi, terletak di Kabupaten
+                Indragiri Hilir. Desa ini memiliki potensi besar dalam bidang pertanian, khususnya dalam produksi padi.
+                Terletak di dataran rendah dengan iklim tropis, Desa Sialang Panjang memiliki tanah yang subur dan sangat
+                cocok untuk pertanian padi. Sejarah desa ini mencerminkan tradisi bertani yang telah diwariskan dari
+                generasi ke generasi, menjadikan pertanian sebagai tulang punggung ekonomi masyarakat desa.
             </p>
-            <p>Potensi pertanian Desa Sialang Panjang sangat besar, dengan setiap hektar lahan mampu menghasilkan sekitar 2
-                hingga 3 ton gabah. Namun, potensi besar ini belum sepenuhnya dioptimalkan dalam hal pemasaran. Saat ini,
-                penjualan beras masih banyak mengandalkan metode konvensional yang terbatas pada pasar lokal. Hal ini
-                menyebabkan terbatasnya akses pasar dan kurang optimalnya pendapatan yang diterima oleh para petani.
+            <p>
+                Total luas lahan pertanian di Desa Sialang Panjang adalah 925 hektar, dengan 750 hektar terdaftar di BPN dan
+                175 hektar belum terdaftar. Setiap hektar lahan menghasilkan sekitar 2-3 ton gabah, menjadikan desa ini
+                sebagai salah satu produsen padi yang signifikan di daerah Indragiri Hilir. Beras yang dihasilkan dari Desa
+                Sialang Panjang dikenal dengan kualitasnya yang tinggi. Program Beras Indragiri bertujuan untuk
+                memaksimalkan potensi ini dengan memfasilitasi pemasaran beras melalui platform digital, sehingga dapat
+                menjangkau pasar yang lebih luas dan memberikan harga yang lebih baik bagi petani.
             </p>
-            <p>Program KKN-Tematik 2024 Universitas Islam Indragiri hadir dengan tema "Program Kolaboratif Entrepreneurship
-                Syariah dalam Upaya Memaksimalkan Potensi Desa" dengan tujuan utama meningkatkan kesejahteraan masyarakat
-                melalui optimalisasi potensi pertanian. Salah satu fokus utama program ini adalah membangun website
-                pemasaran digital untuk produk beras dari Desa Sialang Panjang, yang dikenal dengan "Beras Indragiri".
+            <p>
+                Program Beras Indragiri adalah inisiatif untuk meningkatkan pemasaran beras dari Desa Sialang Panjang,
+                didukung oleh Kodim 0314 Indragiri Hilir dan pemerintah daerah. Program ini memberikan pelatihan, dukungan
+                akses pasar, dan memfasilitasi penjualan online untuk memastikan petani mendapatkan keuntungan maksimal dari
+                hasil panen mereka. Kolaborasi ini dijalankan melalui kerjasama dengan berbagai pihak, termasuk petani
+                lokal, pemerintah desa, dan lembaga terkait. Petani mendapatkan pelatihan teknis dan dukungan dalam
+                penggunaan teknologi untuk meningkatkan produktivitas dan kualitas hasil panen.
             </p>
-            <p>Dengan adanya website pemasaran digital ini, diharapkan produk Beras Indragiri dapat lebih dikenal secara
-                luas, tidak hanya di pasar lokal tetapi juga di pasar regional dan nasional. Selain itu, penggunaan
-                teknologi digital dalam pemasaran diharapkan dapat meningkatkan efisiensi dan efektivitas penjualan, serta
-                memberikan nilai tambah bagi produk beras lokal.
+            <p>
+                Petani di Desa Sialang Panjang berbagi pengalaman mereka dalam berpartisipasi dalam Program Beras Indragiri,
+                menjelaskan manfaat yang mereka rasakan dan harapan mereka untuk masa depan. Testimoni dari petani ini
+                disertakan dalam bentuk cerita sukses yang dapat diakses melalui website. Selain itu, website ini juga
+                menampilkan galeri foto dan video dari kegiatan pertanian, proses panen, dan berbagai acara yang diadakan
+                dalam rangka Program Beras Indragiri.
             </p>
-            <p>Secara historis, Desa Sialang Panjang memiliki tradisi pertanian yang kuat dengan kearifan lokal dalam
-                bercocok tanam padi yang telah diwariskan secara turun-temurun. Namun, untuk menghadapi tantangan zaman dan
-                persaingan pasar yang semakin ketat, inovasi dan teknologi modern sangat diperlukan. Pembangunan website
-                pemasaran digital ini merupakan langkah awal dalam transformasi digital pertanian di Desa Sialang Panjang.
+            <p>
+                Untuk informasi lebih lanjut, website menyediakan kontak untuk petani, pengelola program, dan pihak terkait
+                lainnya yang bisa dihubungi untuk kerjasama dan pembelian beras. Peta dan petunjuk arah menuju Desa Sialang
+                Panjang juga disertakan untuk memudahkan akses bagi pihak yang tertarik untuk mengunjungi dan melihat
+                langsung potensi desa ini. Dengan informasi ini, website pemasaran digital untuk Beras Indragiri memberikan
+                gambaran yang komprehensif dan menarik tentang Desa Sialang Panjang, membantu meningkatkan visibilitas dan
+                penjualan beras dari desa tersebut.
             </p>
-            <p>Melalui program ini, diharapkan petani di Desa Sialang Panjang dapat memperoleh pengetahuan dan keterampilan
-                baru dalam bidang teknologi dan pemasaran digital. Selain itu, kolaborasi dengan berbagai pihak, termasuk
-                Dandim 0314 Indragiri Hilir dan pemerintah desa, diharapkan dapat mendukung keberhasilan program ini dan
-                meningkatkan kesejahteraan masyarakat desa.
-            </p>
-            <p>Dengan optimalisasi potensi pertanian melalui teknologi digital, produk Beras Indragiri diharapkan dapat
-                menjadi produk unggulan yang dikenal luas dan memiliki daya saing tinggi di pasar. Ini akan membantu
-                meningkatkan pendapatan petani, kesejahteraan masyarakat, dan mengangkat nama Desa Sialang Panjang sebagai
-                sentra produksi beras berkualitas tinggi.</p>
         </div>
     </section>
     <!-- /Starter Section Section -->

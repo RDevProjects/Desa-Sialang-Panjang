@@ -106,26 +106,21 @@
 
                 <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
                     <p>
-                        Desa Sialang Panjang merupakan salah satu desa yang terletak di Kecamatan (nama kecamatan),
-                        Kabupaten Indragiri Hilir, Provinsi Riau. Desa ini dikenal sebagai salah satu sentra
-                        pertanian padi dengan mayoritas penduduknya yang berprofesi sebagai petani. Secara
-                        geografis, Desa Sialang Panjang memiliki lahan pertanian yang luas dan subur, dengan total
-                        luas sekitar 925 hektar. Dari jumlah tersebut, 750 hektar telah terdaftar di Badan
-                        Pertanahan Nasional (BPN), sementara 175 hektar lainnya belum terdaftar.
+                        Desa Sialang Panjang adalah desa yang mayoritas penduduknya adalah petani padi, terletak di
+                        Kabupaten Indragiri Hilir. Desa ini memiliki potensi besar dalam bidang pertanian, khususnya dalam
+                        produksi padi. Terletak di dataran rendah dengan iklim tropis, Desa Sialang Panjang memiliki tanah
+                        yang subur dan sangat cocok untuk pertanian padi. Sejarah desa ini mencerminkan tradisi bertani yang
+                        telah diwariskan dari generasi ke generasi, menjadikan pertanian sebagai tulang punggung ekonomi
+                        masyarakat desa.
                     </p>
                     <p>
-                        Potensi pertanian Desa Sialang Panjang sangat besar, dengan setiap hektar lahan mampu
-                        menghasilkan sekitar 2 hingga 3 ton gabah. Namun, potensi besar ini belum sepenuhnya
-                        dioptimalkan dalam hal pemasaran. Saat ini, penjualan beras masih banyak mengandalkan metode
-                        konvensional yang terbatas pada pasar lokal. Hal ini menyebabkan terbatasnya akses pasar dan
-                        kurang optimalnya pendapatan yang diterima oleh para petani.
-                    </p>
-                    <p>
-                        Program KKN-Tematik 2024 Universitas Islam Indragiri hadir dengan tema "Program Kolaboratif
-                        Entrepreneurship Syariah dalam Upaya Memaksimalkan Potensi Desa" dengan tujuan utama
-                        meningkatkan kesejahteraan masyarakat melalui optimalisasi potensi pertanian. Salah satu
-                        fokus utama program ini adalah membangun website pemasaran digital untuk produk beras dari
-                        Desa Sialang Panjang, yang dikenal dengan "Beras Indragiri".
+                        Total luas lahan pertanian di Desa Sialang Panjang adalah 925 hektar, dengan 750 hektar terdaftar di
+                        BPN dan 175 hektar belum terdaftar. Setiap hektar lahan menghasilkan sekitar 2-3 ton gabah,
+                        menjadikan desa ini sebagai salah satu produsen padi yang signifikan di daerah Indragiri Hilir.
+                        Beras yang dihasilkan dari Desa Sialang Panjang dikenal dengan kualitasnya yang tinggi. Program
+                        Beras Indragiri bertujuan untuk memaksimalkan potensi ini dengan memfasilitasi pemasaran beras
+                        melalui platform digital, sehingga dapat menjangkau pasar yang lebih luas dan memberikan harga yang
+                        lebih baik bagi petani.
                     </p>
                     <div class="text-center">
                         <a href="{{ route('tentangDesa') }}" class="btn btn-primary-custom w-25"><span>Lihat Lebih
