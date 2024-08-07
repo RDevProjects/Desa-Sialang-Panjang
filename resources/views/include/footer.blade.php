@@ -27,7 +27,7 @@
                 <div class="footer-contact pt-3">
                     <p>Sialang Panjang</p>
                     <p>Tembilahan Hulu, Indragiri Hilir Regency, Riau</p>
-                    {{-- <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p> --}}
+                    <p class="mt-3"><strong>Telepon:</strong> <span>+62 823-8862-7415</span></p>
                     <p><strong>Email:</strong> <span>sialangpanjang24@gmail.com</span></p>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 <h4>Beberapa Link Yang Berguna</h4>
                 <ul>
                     <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#hero">Beranda</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#about">Tentang Kami</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#tentang">Tentang Kami</a></li>
                     <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#blog">Blog</a></li>
                     <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#komunitas">Komunitas</a></li>
                 </ul>
@@ -53,10 +53,10 @@
                 <h4>Ikuti Sosial Media {{ env('APP_NAME') }}</h4>
                 <p>Beberapa Sosial Media {{ env('APP_NAME') }}</p>
                 <div class="social-links d-flex">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@sialangpanjang" target="_blank"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.facebook.com/salang.panjang"><i class="bi bi-facebook" target="_blank"></i></a>
+                    {{-- <a href=""><i class="bi bi-instagram" target="_blank"></i></a> --}}
+                    <a href="https://www.tiktok.com/@sialangpanjang" target="_blank"><i class="bi bi-tiktok"></i></a>
                 </div>
             </div>
 

@@ -105,23 +105,29 @@
             <div class="row gy-3">
 
                 <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
-                    <p>
-                        Desa Sialang Panjang adalah desa yang mayoritas penduduknya adalah petani padi, terletak di
-                        Kabupaten Indragiri Hilir. Desa ini memiliki potensi besar dalam bidang pertanian, khususnya dalam
-                        produksi padi. Terletak di dataran rendah dengan iklim tropis, Desa Sialang Panjang memiliki tanah
-                        yang subur dan sangat cocok untuk pertanian padi. Sejarah desa ini mencerminkan tradisi bertani yang
-                        telah diwariskan dari generasi ke generasi, menjadikan pertanian sebagai tulang punggung ekonomi
-                        masyarakat desa.
-                    </p>
-                    <p>
-                        Total luas lahan pertanian di Desa Sialang Panjang adalah 925 hektar, dengan 750 hektar terdaftar di
-                        BPN dan 175 hektar belum terdaftar. Setiap hektar lahan menghasilkan sekitar 2-3 ton gabah,
-                        menjadikan desa ini sebagai salah satu produsen padi yang signifikan di daerah Indragiri Hilir.
-                        Beras yang dihasilkan dari Desa Sialang Panjang dikenal dengan kualitasnya yang tinggi. Program
-                        Beras Indragiri bertujuan untuk memaksimalkan potensi ini dengan memfasilitasi pemasaran beras
-                        melalui platform digital, sehingga dapat menjangkau pasar yang lebih luas dan memberikan harga yang
-                        lebih baik bagi petani.
-                    </p>
+                    <div class="text-center">
+                        <p>
+                            Desa Sialang Panjang adalah desa yang mayoritas penduduknya adalah petani padi, terletak di
+                            Kabupaten Indragiri Hilir. Desa ini memiliki potensi besar dalam bidang pertanian, khususnya
+                            dalam produksi padi. Terletak di dataran rendah dengan iklim tropis, Desa Sialang Panjang
+                            memiliki
+                            tanah yang subur dan sangat cocok untuk pertanian padi. Sejarah desa ini mencerminkan tradisi
+                            bertani
+                            yang telah diwariskan dari generasi ke generasi, menjadikan pertanian sebagai tulang punggung
+                            ekonomi
+                            masyarakat desa.
+                        </p>
+                        <p>
+                            Total luas lahan pertanian di Desa Sialang Panjang adalah 925 hektar, dengan 750 hektar
+                            terdaftar di BPN dan 175 hektar belum terdaftar. Setiap hektar lahan menghasilkan sekitar 5-6
+                            ton gabah,
+                            menjadikan desa ini sebagai salah satu produsen padi yang signifikan di daerah Indragiri Hilir.
+                            Beras yang dihasilkan dari Desa Sialang Panjang dikenal dengan kualitasnya yang tinggi. Program
+                            Beras Indragiri bertujuan untuk memaksimalkan potensi ini dengan memfasilitasi pemasaran beras
+                            melalui platform digital, sehingga dapat menjangkau pasar yang lebih luas dan memberikan harga
+                            yang lebih baik bagi petani.
+                        </p>
+                    </div>
                     <div class="text-center">
                         <a href="{{ route('tentangDesa') }}" class="btn btn-primary-custom w-25"><span>Lihat Lebih
                                 Banyak</span><i class="bi bi-arrow-right"></i></a>
@@ -267,13 +273,14 @@
                             </div>
                         </div><!-- End Info Item -->
 
-                        {{-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                             <i class="bi bi-telephone flex-shrink-0"></i>
                             <div>
                                 <h3>Nomor Telp {{ env('APP_NAME') }}</h3>
-                                <p>+1 5589 55488 55</p>
+                                <p>+62 823-8862-7415</p>
+                                {{-- <a href="https://api.whatsapp.com/send?phone=6282388627415">+62 823-8862-7415</a> --}}
                             </div>
-                        </div><!-- End Info Item --> --}}
+                        </div><!-- End Info Item -->
 
                         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                             <i class="bi bi-envelope flex-shrink-0"></i>

@@ -16,7 +16,7 @@
 
     <!-- Starter Section Section -->
     <section id="starter-section" class="starter-section section">
-        <div class="container" data-aos="fade-up">
+        <div class="container text-center" data-aos="fade-up">
             <p>
                 Desa Sialang Panjang adalah desa yang mayoritas penduduknya adalah petani padi, terletak di Kabupaten
                 Indragiri Hilir. Desa ini memiliki potensi besar dalam bidang pertanian, khususnya dalam produksi padi.
@@ -26,7 +26,7 @@
             </p>
             <p>
                 Total luas lahan pertanian di Desa Sialang Panjang adalah 925 hektar, dengan 750 hektar terdaftar di BPN dan
-                175 hektar belum terdaftar. Setiap hektar lahan menghasilkan sekitar 2-3 ton gabah, menjadikan desa ini
+                175 hektar belum terdaftar. Setiap hektar lahan menghasilkan sekitar 5-6 ton gabah, menjadikan desa ini
                 sebagai salah satu produsen padi yang signifikan di daerah Indragiri Hilir. Beras yang dihasilkan dari Desa
                 Sialang Panjang dikenal dengan kualitasnya yang tinggi. Program Beras Indragiri bertujuan untuk
                 memaksimalkan potensi ini dengan memfasilitasi pemasaran beras melalui platform digital, sehingga dapat
