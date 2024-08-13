@@ -25,7 +25,7 @@ class KomunitasController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'description' => 'required',
+            // 'description' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp',
         ]);
 

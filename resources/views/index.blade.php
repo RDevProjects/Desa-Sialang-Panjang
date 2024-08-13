@@ -150,7 +150,7 @@
 
         <div class="container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="row gy-4">
+            <div class="row gy-4 justify-content-center">
 
                 @foreach ($blog as $item)
                     <div class="col-lg-4 col-md-6 mb-4">
@@ -188,7 +188,7 @@
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="row">
+            <div class="row justify-content-center">
                 @foreach ($produk as $item)
                     <div class="col-lg-3 col-md-4 mb-4">
                         <div class="card" style="background-color: #fff9c4; border-radius: 10%">
@@ -227,7 +227,7 @@
 
         <div class="container">
 
-            <div class="row gy-4">
+            <div class="row gy-4 justify-content-center">
                 @foreach ($komunitas as $item)
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-item position-relative">
