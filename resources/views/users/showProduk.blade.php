@@ -26,8 +26,7 @@
                     </div>
                 </div>
                 <div class="card-body mx-auto px-5">
-                    <h5 class="text-center">Harga : <span> Rp. {{ number_format($produk->price, 0, ',', '.') }} / 1 KG | Rp.
-                            {{ number_format($produk->price * 10, 0, ',', '.') }} / 10 KG
+                    <h5 class="text-center">Harga : <span> Rp. {{ number_format($produk->price, 0, ',', '.') }} / 1 KG
                         </span></h5>
                     <p class="card-text">
                         {!! $produk->description !!}
