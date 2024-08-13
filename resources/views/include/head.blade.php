@@ -1,12 +1,29 @@
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>{{ env('APP_NAME') }}</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <!-- Primary Meta Tags -->
+    <title>Desa Sialang Panjang - Produsen Beras Berkualitas Tinggi di Indragiri Hilir</title>
+    <meta name="title" content="Desa Sialang Panjang - Produsen Beras Berkualitas Tinggi di Indragiri Hilir" />
+    <meta name="description"
+        content="Desa Sialang Panjang, terletak di Kabupaten Indragiri Hilir, dikenal sebagai produsen beras berkualitas tinggi. Dengan luas lahan pertanian 925 hektar, desa ini menghasilkan 5-6 ton gabah per hektar. Program Beras Indragiri mendukung pemasaran digital untuk meningkatkan visibilitas dan penjualan beras, memberikan keuntungan maksimal bagi petani lokal." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sialangpanjang.site/" />
+    <meta property="og:title" content="Desa Sialang Panjang - Produsen Beras Berkualitas Tinggi di Indragiri Hilir" />
+    <meta property="og:description"
+        content="Desa Sialang Panjang, terletak di Kabupaten Indragiri Hilir, dikenal sebagai produsen beras berkualitas tinggi. Dengan luas lahan pertanian 925 hektar, desa ini menghasilkan 5-6 ton gabah per hektar. Program Beras Indragiri mendukung pemasaran digital untuk meningkatkan visibilitas dan penjualan beras, memberikan keuntungan maksimal bagi petani lokal." />
+    <meta property="og:image" content="{{ asset('assets/sialang-panjang-map.jpg') }}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sialangpanjang.site/" />
+    <meta property="twitter:title"
+        content="Desa Sialang Panjang - Produsen Beras Berkualitas Tinggi di Indragiri Hilir" />
+    <meta property="twitter:description"
+        content="Desa Sialang Panjang, terletak di Kabupaten Indragiri Hilir, dikenal sebagai produsen beras berkualitas tinggi. Dengan luas lahan pertanian 925 hektar, desa ini menghasilkan 5-6 ton gabah per hektar. Program Beras Indragiri mendukung pemasaran digital untuk meningkatkan visibilitas dan penjualan beras, memberikan keuntungan maksimal bagi petani lokal." />
+    <meta property="twitter:image" content="{{ asset('assets/sialang-panjang-map.jpg') }}" />
 
     <!-- Favicons -->
-    <link href="{{ asset('assets/users/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('favicon.ico') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
