@@ -21,16 +21,20 @@
             <div class="card">
                 <div class="card-img-wrapper w-75 mx-auto">
                     <h2 class="text-center my-5">{{ $komunitas->name }}</h2>
+                    <p class="card-text text-center">
+                        Komunitas <b>{{ $komunitas->name }}</b> adalah salah satu komunitas yang ada di
+                        {{ env('APP_NAME') }}.
+                    </p>
                     <div class="d-flex justify-content-center">
                         <img src="{{ asset('storage/' . $komunitas->image) }}" class="card-img-top w-75"
                             alt="Komunitas Image">
                     </div>
                 </div>
                 <div class="card-body mx-auto px-5">
-                    <p class="card-text">
+                    {{-- <p class="card-text">
                         Komunitas <b>{{ $komunitas->name }}</b> adalah salah satu komunitas yang ada di
                         {{ env('APP_NAME') }}.
-                    </p>
+                    </p> --}}
                 </div>
             </div>
         </div>
