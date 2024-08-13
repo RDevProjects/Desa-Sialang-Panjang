@@ -202,7 +202,7 @@
                                 <h5 class="card-title mt-2 text-truncate">
                                     <a href="{{ route('produk.show', $item->slug) }}">{{ $item->name }}</a>
                                 </h5>
-                                <p class="card-text">Rp. {{ number_format($item->price, 0, ',', '.') }}</p>
+                                <p class="card-text">Rp. {{ number_format($item->price, 0, ',', '.') }} / 1 KG</p>
                             </div>
                         </div>
                     </div>
@@ -229,21 +229,20 @@
 
             <div class="row gy-4 justify-content-center">
                 @foreach ($komunitas as $item)
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item position-relative">
-                            <div class="icon"> <img src="{{ asset('storage/' . $item->image) }}" class="card-img-top"
-                                    alt="Produk Image"></div>
-                            <h4><a href="{{ route('komunitas.show', $item->slug) }}"
-                                    class="stretched-link">{{ $item->name }}</a></h4>
-                            <p>{{ \Illuminate\Support\Str::limit(strip_tags($item->description), 150) }}<a
-                                    href="{{ route('komunitas.show', $item->slug) }}"> Baca Selengkapnya</a></p>
+                    <div class="col-lg-3 col-md-4 mb-4">
+                        <div class="card rounded-pill" style="background-color: #fff9c4;">
+                            <div class="card-body py-2">
+                                <h5 class="card-title text-center mt-2 text-truncate">
+                                    <a href="{{ route('komunitas.show', $item->slug) }}">{{ $item->name }}</a>
+                                </h5>
+                            </div>
                         </div>
-                    </div><!-- End Service Item -->
+                    </div>
                 @endforeach
             </div>
-            <div class="text-center mt-5">
+            {{-- <div class="text-center mt-5">
                 <a href="{{ route('komunitas') }}" class="btn btn-outline-primary">Lihat Komunitas Lainnya</a>
-            </div>
+            </div> --}}
         </div>
 
     </section><!-- /Komunitas Section -->

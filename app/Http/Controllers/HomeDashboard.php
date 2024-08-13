@@ -13,7 +13,7 @@ class HomeDashboard extends Controller
     {
         $blog = Blog::latest()->paginate(3);
         $produk = Produk::latest()->paginate(3);
-        $komunitas = Komunitas::latest()->paginate(4);
+        $komunitas = Komunitas::latest()->get();
         return view('index', compact('blog', 'produk', 'komunitas'));
     }
 

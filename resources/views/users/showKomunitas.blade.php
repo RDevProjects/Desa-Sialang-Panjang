@@ -28,7 +28,8 @@
                 </div>
                 <div class="card-body mx-auto px-5">
                     <p class="card-text">
-                        {!! $komunitas->description !!}
+                        Komunitas <b>{{ $komunitas->name }}</b> adalah salah satu komunitas yang ada di
+                        {{ env('APP_NAME') }}.
                     </p>
                 </div>
             </div>
