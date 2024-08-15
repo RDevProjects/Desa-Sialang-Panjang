@@ -27,7 +27,7 @@
                 <div class="footer-contact pt-3">
                     <p>Sialang Panjang</p>
                     <p>Tembilahan Hulu, Indragiri Hilir Regency, Riau</p>
-                    <p class="mt-3"><strong>Telepon:</strong> <span>+62 823-8862-7415</span></p>
+                    <p class="mt-3"><strong>Telepon:</strong> <span>+62 812-5929-4640</span></p>
                     <p><strong>Email:</strong> <span>sialangpanjang24@gmail.com</span></p>
                 </div>
             </div>

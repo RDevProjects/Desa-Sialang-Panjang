@@ -4,6 +4,7 @@
 @include('include.head')
 
 @stack('css')
+@stack('style')
 @stack('script-head')
 
 <body class="starter-page-page">
