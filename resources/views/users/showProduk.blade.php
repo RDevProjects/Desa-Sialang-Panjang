@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="card-body mx-auto px-5">
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex">
                         <h5 class="text-center mt-2">Harga : <span> Rp. {{ number_format($produk->price, 0, ',', '.') }} / 1
                                 KG
                             </span></h5>
